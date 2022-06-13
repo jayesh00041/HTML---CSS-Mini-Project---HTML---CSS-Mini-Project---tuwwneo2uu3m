@@ -1,1 +1,263 @@
+/* default properties of whole page */
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
 
+/* properties for header part */
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding: 1em;
+}
+.left, .center, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+li.menu, .right i, .logo-li, .left i{
+    display: inline;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: 400ms all cubic-bezier(1, 0, 0.17, 1);
+}
+li.menu:hover {
+    background-color: black;
+    color: white;
+}
+.header i{
+    font-size: 1.15em;
+}
+.menus{
+    padding-left: 0px;
+}
+.center{
+    justify-content: space-evenly;
+}
+.logo{
+    height: 35px;
+}
+.shopping-cart, .toggle-menu, .search{
+    display: none;
+    transition: 5000ms all ease-in;
+    margin-top: 70px;
+    top: 0px;
+}
+.cart-icon:hover + .shopping-cart, .menu-bar:hover + .toggle-menu, .search-icon:hover + .search{
+    display: block;
+    position: absolute;
+    width: 200px;
+    padding: 20px;
+    background: #ebebeb;
+    height: auto;
+    border: black 5px solid;
+    z-index: 15;
+}
+
+.cart-icon:hover, .menu-bar:hover, .search-icon:hover{
+    background-color: black;
+    color: white;
+}
+.shopping-cart span {
+    font-size: 1em;
+}
+.shopping-cart button {
+    background: black;
+    color: white;
+    padding: 5px;
+    font-size: 1em;
+    margin-top: 30px;
+}
+.toggle-menu li:hover {
+    background-color: black;
+    color: white;
+}
+.toggle-menu li {
+    list-style-type: none;
+    padding: 10px;
+}
+.search input{
+    width: 100%;
+    background-color: #ebebeb;
+    color: black;
+    font-size: 1.15em;
+    padding: 5px;
+}
+
+/* banner css code  */
+
+.banner1, .banner2, .banner3,.banner4, .banner5 {
+    height: 100vh;
+    position: sticky;
+    margin: auto;
+    bottom: 0;
+    box-shadow: 0 10px 15px #00000060;
+    background-size: cover !important;
+}
+.image-title {
+    width: 50%;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 3em 2em;
+    letter-spacing: 0.25em;
+    line-height: 1.5em;
+}
+.image-title button {
+    font-size: 0.65em;
+    background: black;
+    padding: 8px 20px 5px 20px;
+    transition: 500ms all ease-in;
+    letter-spacing: 0.2em;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.image-title button:hover{
+    background-color: blanchedalmond;
+    color: black;
+
+}
+.image-title img {
+    width: 70%;
+}
+.vertical-text {
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 18%;
+    background:linear-gradient(to right, transparent, #ffffff, transparent);
+    font-size: 2.25em;
+    letter-spacing: 0.35em;
+    font-weight: 900;
+}
+.vertical-text:before {
+    content: '--------- ';
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: -9px;
+    padding-bottom: 100px;
+    color: black;
+}
+.vertical-text span {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+}
+.right-align-text{
+    float: right;
+}
+.center-align-text{
+    margin: auto;
+    font-size: 2em;
+    padding-top: 5em;
+    letter-spacing: 0.75em;
+    width: 70%;
+}
+.round-button {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    float: left;
+    margin: 5em;
+}
+
+/* footer css code starts here */
+.footer {
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+    width: 100%;
+    line-height: 1.5em;
+    margin-bottom: 3em;
+}
+.block1, .block2, .block3, .block4 {
+    padding: 2em;
+}
+.footer h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+.footer ul {
+    padding-inline-start: unset;
+}
+.footer li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.footer li {
+    list-style: none;
+    color: grey;
+    transition: 400ms all;
+}
+.block1 img {
+    width: 50%;
+    height: auto;
+    padding: 1em 0em 4em 0em;
+}
+.block4 input {
+    width: 100%;
+    font-size: 1.25em;
+    margin-top: 1em;
+    border: 1px solid grey;
+    padding: 8px;
+}
+.block4 i:hover {
+    background: black;
+    color: white;
+}
+
+.block4 i {
+    font-size: 1.25em;
+    padding: 0.5em;
+    margin: 0.75em;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    transition: 500ms all;
+}
+
+/* MObile resposive code starts here  */
+@media screen and (max-width: 850px) {
+    .center{
+        visibility:hidden;
+    }
+    .block2, .block3, .block1{
+        display: none;
+    }
+    .block4{
+        width: 100%;
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .image-title{
+        font-size: 1.5em;
+    }
+    .block4 input {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .left{
+        justify-content: flex-start;
+    }
+    .right{
+        justify-content: flex-end;
+    }
+    .vertical-text{
+        display: none;
+    }
+    .image-title {
+        width: 70%;
+        font-size: 1.5em;
+        text-align: center;
+        /* padding: 2em 1em; */
+        letter-spacing: 0.25em;
+        line-height: 1.5em;
+    }
+}
