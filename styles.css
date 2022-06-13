@@ -263,4 +263,11 @@ li.menu:hover {
     .block4 i {
         margin: 0.5em;
     }
+    .header {
+        padding: 0.1em;
+    }
+    .logo {
+        height: 26px;
+        visibility: initial;
+    }
 }
