@@ -260,4 +260,7 @@ li.menu:hover {
         letter-spacing: 0.25em;
         line-height: 1.5em;
     }
+    .block4 i {
+        margin: 0.5em;
+    }
 }
