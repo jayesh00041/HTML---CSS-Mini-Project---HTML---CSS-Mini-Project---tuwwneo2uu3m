@@ -6,91 +6,35 @@
 ![Desktop](https://heartfelt-florentine-50616b.netlify.app/Readme%20Images/Mobile.png)
 
 
+# [View Project](https://heartfelt-florentine-50616b.netlify.app/)
+
 ## Features
 
 This project is have all these features:
 
- - Hover on menus 
- - Testing as a standard
- - Turnkey access to Travis CI
- - HTTPS by default
- - Documentation for contributors
+- Hover effect on Manus
+- Hover effect on search, cart and bars on right side 
+- Sticky banners with covering background images 
+- Stylish contents on all banner section
+- Responsive with mobiles and tablet screens
 
-## How to use this
 
-First clone or [download a release](https://github.com/fulldecent/html-website-template/releases), that is the starting point for your site.
+## Learnings
 
-THIS LIST IS EASY, CHECK IT OFF ONE-BY-ONE BABY!
-
- - [ ] Open `index.html` in your favorite text editor and make a great web page, add other content if necessary.
- - [ ] Fix all validation testing errors (see **Build instructions**, below)
- - [ ] Upload your website source code to GitHub or other collaboration point
- - [ ] Enable Travis CI validation testing for your repository
- - [ ] Replace all details below, inspire people to contribute to your project.
- - [ ] Update the release script in `Rakefile` with details to publish to your server.
- - [ ] Delete all this crap up here.
- - [ ] Publish the site (full steps are under **Deploy** below in case you forget)
- - [ ] Set up HTTPS on your website, some [hints are here](https://github.com/fulldecent/html-website-template/wiki/How-to-set-up-HTTPS)
-
-THEN YOU'RE DONE, GO STAR [html-website-template](https://github.com/fulldecent/html-website-template) FOR UPDATES.
-
----
-
-# My First Website About Horses
-
-[![CI Status](http://img.shields.io/travis/fulldecent/html-website-template.svg?style=flat)](https://travis-ci.org/fulldecent/html-website-template)
-
-This website is published at https://example.com/horses/
-
-![screen shot 2017-03-16 at 6 30 58 pm](https://cloud.githubusercontent.com/assets/382183/24021325/cb3aaa9a-0a76-11e7-8182-6138b1d3c0c2.png)
-
-## Mission
-
-This website exists to help educate the world about horses. There are so many kinds of horses and they are all just so magical. After you read these pages you will definitely want to get one for yourself!
-
-## Build instructions
-
-We test and publish this website using a few simple tools. Please set up these tools (takes about 3 minutes) to contribute seriously to our project:
-
-1. Set up Ruby on your system
-   * For macOS, open Terminal.app and paste in these commands
-     * [Install Homebrew](https://brew.sh/) (click the link and paste that one command into Terminal.app)
-     * `brew install ruby`
-   * For Linux Mint, open Terminal and paste in these commands
-     * `sudo apt-get install ruby-dev build-essential libxml2 libxslt-dev libcurl4-openssl-dev`
-2. `gem update --system`
-2. `gem install bundler`
-3. `export NOKOGIRI_USE_SYSTEM_LIBRARIES=true`
-3. `bundle install`
-
-Now you are done setting up. Use this command to build the website.
-
-```sh
-bundle exec rake build
-```
-
-You can now access the website by pointing your browser to the `BUILD` folder or running a command like `cd BUILD; php -S localhost:8000`.
-
-Also, you can check for common problems on our website automatically, just run this command.
-
-```sh
-bundle exec rake test
-```
-
-## Deploy instructions
-
-Use this command to publish the website online to our server.
-
-```sh
-bundle exec rake publish
-```
-
-You can only run that command if you have authorized SSH keys on your computer.
+ - Grid 
+ - Flex 
+ - Media queries 
+ - Transition effects 
+ - Transform 
+ - Text alignment 
+ - Padding and margin 
+ - Position setup
+ 
+## Can be improved
+- Because of no JavaScript, they are many functionalities we cannot work on like on click of the cart and menu bars' respective block does not stay opend 
 
 ## Author
 
-Mary Smith and [other contributors](https://github.com/fulldecent/html-website-template/graphs/contributors) made this website with love.
+Jayesh Sharma 
+[Linkdin Profile](https://github.com/fulldecent/html-website-template/graphs/contributors)
 
-## License
-
-Copyright 2017 Mary Smith. All rights reserved.
